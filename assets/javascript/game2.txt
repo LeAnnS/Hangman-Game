@@ -1,20 +1,13 @@
-	// Here we created an on-click event that responds to button clicks of the crystal image.
-  	$(".babygroup-image").on("click", function() {
 
-    //When the user clicks on the picture...the computer selects a word from the baby-word choices.
-	//create an array that lists out all of the options
-	var babywordOptions = ["DIAPERS", "BOTTLES", "PACIFIER", "ONESIE", "RATTLE", "PLAYPEN", "STROLLER", "NURSERY", "CRADLE", "NAPTIME"]
+
+//When the user presses a key...
+alert("hi");
 	
-	// Computer randomly chooses a word from the options array.
-	var computerGuess = babywordOptions[Math.floor(Math.random() * babywordOptions.length)];
+//on "Key-dn" We randomly select a word from our word array
+//We generate a random number between 0 and 9 (the number of words in our array)
 
-	// Clicking the picture triggers an alert message.
-    alert("The computer chose: " + computerGuess + "");
-
-  	});
-
-  	
-  
+//This array holds all of our baby-word choices
+var baby-wordOptions = ["DIAPERS", "BOTTLES", "PACIFIER", "ONESIE", "RATTLE", "PLAYPEN", "STROLLER", "NURSERY", "CRADLE", "NAPTIME" ]
 
 //We display a quantity of spaces equivalent to the quantity of letters in the word
 
