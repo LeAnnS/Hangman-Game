@@ -1,10 +1,13 @@
-//When the user presses a key...
 
+
+//When the user presses a key...
+alert("hi");
+	
 //on "Key-dn" We randomly select a word from our word array
 //We generate a random number between 0 and 9 (the number of words in our array)
 
 //This array holds all of our baby-word choices
-var baby-wordArray = ["DIAPERS", "BOTTLES", "PACIFIER", "ONESIE", "RATTLE", "PLAYPEN", "STROLLER", "NURSERY", "CRADLE", "NAPTIME" ]
+var baby-wordOptions = ["DIAPERS", "BOTTLES", "PACIFIER", "ONESIE", "RATTLE", "PLAYPEN", "STROLLER", "NURSERY", "CRADLE", "NAPTIME" ]
 
 //We display a quantity of spaces equivalent to the quantity of letters in the word
 

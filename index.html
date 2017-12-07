@@ -3,39 +3,76 @@
 <head>
 	<meta charset="utf-8">
 	<title>Fill the Baby Bottle Game!</title>
+
+	<!--  Linking Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<!-- Linking CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	<!-- Linking jQuery -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<!-- Linking Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Slackey" rel="stylesheet">
+	
 </head>
 
 <body>
-<h1>Fill the Baby Bottle Game!</h1>
-	<h4>(AKA - Hangman with BABY-related words.)</h4>
-<hr>
+<div class="container">
 
-<h3>Press Any Key To Start!</h3>
-<hr>
+	<div class="jumbotron bg-primary text-center">
+		<div id="babygroup">
+			<img class="babygroup-image" src="assets/images/babygroup.jpg" alt="Baby Group Photo">
+		</div>
 
-<h4>WINS</h4>
-<h2> X </h2>
-<hr>
-
-<h4>CURRENT WORD</h4>
-
-<H2>_ _ _ _ _ _ _</H2>
-
-<hr>
-
-<h4>NUMBER OF GUESSES REMAINING</h4>
-<h2> X </h2>
-<hr>
-
-<h4>LETTERS ALREADY GUESSED</h4>
-<h2> A, B, C, </h2>
+		<h1>Fill the Baby Bottle Game!</h1>
+		<h5>(AKA - Hangman with BABY-related words.)</h4>
+		<hr>
 
 
+		<h3>Press Any Key To Start!</h3>
 
 
+		<hr>
+
+		<h4>WINS</h4>
+		<h2> X </h2>
+		<hr>
+
+		<h4>CURRENT WORD</h4>
+
+		<H2>_ _ _ _ _ _ _</H2>
+
+		<hr>
+
+		<h4>NUMBER OF GUESSES REMAINING</h4>
+		<h2> X </h2>
+		<hr>
+
+		<h4>LETTERS ALREADY GUESSED</h4>
+		<h2> A, B, C, </h2>
+
+	</div>
+
+</div>
+
+	<!-- JAVASCRIPT  -->
+  	<!-- ========================================= -->
+  	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  	<script type="text/javascript">
+	// Here we created an on-click event that responds to button clicks of the crystal image.
+  	$(".babygroup-image").on("click", function() {
+
+    // Clicking the button triggers an alert message.
+    alert("You clicked a babygroup!");
+
+  	});
+  
+  	</script>
 
 
-
-
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
 </body>
 </html>
