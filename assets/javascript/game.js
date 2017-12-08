@@ -1,24 +1,30 @@
-	// Here we created an on-click event that responds to button clicks of the crystal image.
-  	$(".babygroup-image").on("click", function() {
+// Here we created an on-click event that responds to button clicks of the crystal image.
+$(".babygroup-image").on("click", function() {
 
-    //When the user clicks on the picture...the computer selects a word from the baby-word choices.
+	//When the user clicks on the picture...the computer selects a word from the baby-word choices.
 	//create an array that lists out all of the options
 	var babywordOptions = ["DIAPERS", "BOTTLES", "PACIFIER", "ONESIE", "RATTLE", "PLAYPEN", "STROLLER", "NURSERY", "CRADLE", "NAPTIME"]
-	
+
 	// Computer randomly chooses a word from the options array.
-	var computerGuess = babywordOptions[Math.floor(Math.random() * babywordOptions.length)];
+	var computerChoice = babywordOptions[Math.floor(Math.random() * babywordOptions.length)];
 
 	// Clicking the picture triggers an alert message.
-    alert("The computer chose: " + computerGuess + "");
+	console.log("The computer chose: " + computerChoice);
 
-  	});
+	//for now - display the computerChoice in the html doc
+	document.getElementById("wordBlanks").innerHTML = computerChoice;
+
+
 
   	
-  
-
 //We display a quantity of spaces equivalent to the quantity of letters in the word
+	//determine the quantity of letters in the chosen word.
+
+	//display blank spaces equivalent to the quantity of letters in the chosen word.
 
 //On "Key-up" We compare the key selection to the letters in the word
+	//capture the key press, convert it to upper case, and save it to a variable
+	// var letter =String.fromCharCode (event.keycode).toUpperCase();
 
 	//If selection = yes, the letter IS in the word, we reveal the letter
 
@@ -40,3 +46,5 @@
 		//We play sound "Baby Crying"
 		//We re-set the game
 		//Display message "Press Any Key to Play Again!"
+
+});

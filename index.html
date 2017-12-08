@@ -9,10 +9,7 @@
 	<!-- Linking CSS -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-	<!-- Linking jQuery -->
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-	<!-- Linking Google Fonts -->
+		<!-- Linking Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Baloo|Slackey" rel="stylesheet">
 	
 </head>
@@ -41,7 +38,7 @@
 
 		<h4>CURRENT WORD</h4>
 
-		<H2>_ _ _ _ _ _ _</H2>
+		<h2 id="wordBlanks">-------</h2>
 
 		<hr>
 
@@ -60,28 +57,9 @@
   	<!-- ========================================= -->
   	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-  	<script type="text/javascript">
-	// Here we created an on-click event that responds to button clicks of the crystal image.
-  	$(".babygroup-image").on("click", function() {
-
-    //When the user clicks on the picture...the computer selects a word from the baby-word choices.
-	//create an array that lists out all of the options
-	var babywordOptions = ["DIAPERS", "BOTTLES", "PACIFIER", "ONESIE", "RATTLE", "PLAYPEN", "STROLLER", "NURSERY", "CRADLE", "NAPTIME"]
-	
-	// Computer randomly chooses a word from the options array.
-	var computerGuess = babywordOptions[Math.floor(Math.random() * babywordOptions.length)];
-
-	// Clicking the picture triggers an alert message.
-    alert("The computer chose: " + computerGuess + "");
-
-  	});
-
-  	
   
-  	</script>
 
-
-<!-- <script type="text/javascript" src="assets/javascript/game.js"></script>
-	 -->
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+	
 </body>
 </html>
